@@ -1,0 +1,26 @@
+sudo: false
+language: node_js
+node_js:
+- '10.5.0'
+cache:
+  yarn: true
+  directories:
+    - node_modules
+branches:
+  only:
+  - master
+notifications:
+  email: false
+before_script:
+- yarn
+script:
+- npm run production
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: dist/
+  github-token: $GITHUB_API_KEY  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master

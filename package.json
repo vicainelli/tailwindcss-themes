@@ -1,0 +1,53 @@
+{
+  "name": "tailwindcss-themes",
+  "version": "1.0.0",
+  "description": "Themes Using: Pug + Tailwind CSS + Javascript + Gulp",
+  "main": "index.js",
+  "scripts": {
+    "production": "gulp copy-images && gulp views && gulp css && gulp scripts"
+  },
+  "homepage": "https://github.com/vicainelli/tailwindcss-themes#readme",
+  "paths": {
+    "src": {
+      "css": "./src/css/",
+      "views": "./src/views/",
+      "images": "./src/images/"
+    },
+    "dist": {
+      "base": "./dist/",
+      "css": "./dist/css/",
+      "images": "./dist/images/"
+    },
+    "config": {
+      "tailwind": "./tailwind.js"
+    }
+  },
+  "keywords": [
+    "node",
+    "pug",
+    "gulp",
+    "css",
+    "javascript",
+    "tailwindcss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vicainelli/tailwindcss-themes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vicainelli/tailwindcss-themes/issues"
+  },
+  "author": "Vinicius Cainelli <vicainelli@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-purgecss": "^0.15.0",
+    "tailwindcss": "^0.6.4"
+  }
+}
